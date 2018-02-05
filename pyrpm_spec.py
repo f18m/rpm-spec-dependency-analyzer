@@ -148,6 +148,7 @@ _tags = [
     _ListAndDict('patches', re.compile(r'^(Patch\d*):\s*(\S+)')),
     _List('build_requires', re.compile(r'^BuildRequires:\s*(.+)')),
     _List('requires', re.compile(r'^Requires:\s*(.+)')),
+    _List('requires_post', re.compile(r'^Requires\(post\):\s*(.+)')),
     _List('packages', re.compile(r'^%package\s+(\S+)')),
     _List('files', re.compile(r'%attr\(.*\)\s+(\S+)')),
     _MacroDef('define', re.compile(r'^%define\s+(\S+)\s+(\S+)')),

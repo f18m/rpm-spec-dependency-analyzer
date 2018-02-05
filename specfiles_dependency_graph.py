@@ -60,11 +60,13 @@ def build_requirements_digraph( spec ):
     """
     
     all_cleaned_reqs = []
-    for req in spec.requires:
+    all_req = spec.requires
+    all_req.extend( spec.requires_post)
+    for req in all_req:
         cleaned_req = []
-        for pkgname in req.name.split(','):
+        for pkgname in str(req).split(','):
             cleaned_req.append(clean_require_field(pkgname))
-        #print('req tranformed [{}] -> [{}]'.format(req, cleaned_req))
+        print('req tranformed [{}] -> [{}]'.format(req, cleaned_req))
         all_cleaned_reqs = all_cleaned_reqs + cleaned_req
 
     #print('All requirements are: {}'.format(all_cleaned_reqs))
