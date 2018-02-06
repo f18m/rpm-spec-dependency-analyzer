@@ -66,7 +66,7 @@ def build_requirements_digraph( spec ):
         cleaned_req = []
         for pkgname in str(req).split(','):
             cleaned_req.append(clean_require_field(pkgname))
-        print('req tranformed [{}] -> [{}]'.format(req, cleaned_req))
+        #print('req tranformed [{}] -> [{}]'.format(req, cleaned_req))
         all_cleaned_reqs = all_cleaned_reqs + cleaned_req
 
     #print('All requirements are: {}'.format(all_cleaned_reqs))
@@ -86,10 +86,10 @@ def build_node_labels( spec ):
        associating each RPM with its LABEL
     """
     nodename = clean_require_field(spec.name)
-    print(spec.name, nodename)
+    #print(spec.name, nodename)
     if len(spec.files) == 0:
-        return [ nodename, nodename + "\\nMETA", "box", "darkolivegreen4" ]
-    return [ nodename, nodename, "ellipse", "blue" ]
+        return [ nodename, nodename + "\\nMETA PACKAGE", "box", "darkolivegreen4" ]
+    return [ nodename, nodename, "ellipse", "deepskyblue1" ]
 
 def process_specs( specfiles ):
     """Processes a list of RPM spec files
