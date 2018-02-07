@@ -9,14 +9,14 @@ generates a nice graph of the dependencies among them using DOT.
 ```
 git clone https://github.com/f18m/rpm-spec-dependency-analyzer.git
 sudo ln $(pwd)/rpm-spec-dependency-analyzer/specfiles_dependency_graph.py   /usr/local/bin/specfiles_dependency_graph
-sudo ln $(pwd)/rpm-spec-dependency-analyzer/pyrpm_spec.py      /usr/local/bin
+sudo ln $(pwd)/rpm-spec-dependency-analyzer/pyrpm_spec.py                   /usr/local/bin
 ```
 
 ## How to use
 
 
 ```
-specfiles_dependency_graph.py --output reqgraph.dot /my/spec/folder/*.spec
+specfiles_dependency_graph --output reqgraph.dot /my/spec/folder/*.spec
 dot -Tpng reqgraph.dot -o reqgraph.png
 ```
 
