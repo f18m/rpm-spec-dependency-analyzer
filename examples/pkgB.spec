@@ -8,10 +8,10 @@ Release: 1
 License: GPL
 Vendor: None
 
-Requires: systemPkgC
+Requires: systemPkgB
 
 %description
-Metapackage for example purposes
+Concrete package for example purposes
 
 %install
 %clean
@@ -21,3 +21,4 @@ Metapackage for example purposes
 %preun
 %postun
 %files
+%include file-list.inc

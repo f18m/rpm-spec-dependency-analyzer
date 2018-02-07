@@ -1,7 +1,7 @@
 digraph Dependencies {
 pkgA [shape=box style="filled" fillcolor=darkolivegreen4 label="pkgA\nMETA PACKAGE"]
-pkgB [shape=box style="filled" fillcolor=darkolivegreen4 label="pkgB\nMETA PACKAGE"]
+pkgB [shape=ellipse style="filled" fillcolor=deepskyblue1 label="pkgB"]
 pkgA -> systemPkgA
 pkgA -> pkgB
-pkgB -> systemPkgC
+pkgB -> systemPkgB
 }
