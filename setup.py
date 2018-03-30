@@ -8,7 +8,7 @@ setup(
     author='Francesco Montorsi',
     author_email='francesco.montorsi@gmail.com',
     url='https://github.com/f18m/rpm-spec-dependency-analyzer',
-    download_url='  # use the URL to the GitHub repo/archive/0.1.tar.gz',
+    download_url='https://github.com/f18m/rpm-spec-dependency-analyzer/archive/1.0.tar.gz',
     keywords=['RPM', 'spec', 'graphviz', 'dependencies', 'dependency-analysis'],
     classifiers=[],
 )
