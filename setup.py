@@ -20,9 +20,10 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='python-rpm-spec-dependency-analyzer',
-    packages=['pyrpm-dependency-analyzer'],
-    version='0.2',
+    name='rpm-spec-dependency-analyzer',
+    packages=['rpm_spec_dependency_analyzer'],
+    python_requires='>=3',
+    version='0.5',
     description='Module for analyzing RPM spec dependencies.',
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
@@ -34,4 +35,9 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
     ],
+    entry_points={
+        'console_scripts': [
+            'rpm_spec_dependency_analyzer = rpm_spec_dependency_analyzer.rpm_spec_dependency_analyzer:main',
+        ]
+    }
 )
