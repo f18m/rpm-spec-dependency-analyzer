@@ -4,4 +4,5 @@
 MANIFEST
 build/
 dist/
-
+rpm_spec_dependency_analyzer/__pycache__/
+rpm_spec_dependency_analyzer.egg-info/

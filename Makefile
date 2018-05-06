@@ -1,4 +1,5 @@
 dist:
+	python3 setup.py sdist
 	python3 setup.py bdist_wheel
 
 clean:
@@ -12,4 +13,7 @@ test_install:
 	@echo
 	rpm_spec_dependency_analyzer --help
 
-.PHONY: dist clean test_install
+upload:
+	twine upload dist/*
+
+.PHONY: dist clean test_install upload

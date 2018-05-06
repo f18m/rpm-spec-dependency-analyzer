@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# see https://pypi.org/project/python-rpm-spec-dependency-analyzer/
+# see https://pypi.org/project/rpm_spec_dependency_analyzer/
 
 """A setuptools based setup module.
 See:
