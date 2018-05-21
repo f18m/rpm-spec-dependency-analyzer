@@ -1,5 +1,7 @@
 # rpm-spec-dependency-analyzer
 
+[![PyPI version](https://badge.fury.io/py/rpm-spec-dependency-analyzer.svg)](https://badge.fury.io/py/rpm-spec-dependency-analyzer)
+
 This is a simple Python3 script that parses a list of SPEC files and
 generates a nice graph of the dependencies among them using DOT.
 
